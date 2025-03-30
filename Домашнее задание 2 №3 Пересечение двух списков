@@ -1,0 +1,8 @@
+l1 = input("Введите первый список: ").split()
+l2 = input("Введите второй список: ").split()
+s1 = [int(x) for x in l1]
+s2 = [int(x) for x in l2]
+set1 = set(s1)
+set2 = set(s2)
+per = set1 & set2
+print("Общие элементы:", *per)
