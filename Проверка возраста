@@ -1,0 +1,21 @@
+number = input("Введите число: ")
+if number.isdigit():
+    num = int(number)
+    if num == 0:
+        print("Ошибка: введен ноль")
+    else:
+        if num >= 18:
+            print("Вы совершеннолетний.")
+        else:
+            print("Вы несовершеннолетний.")
+else:
+    if number.startswith('-') and number[1:].isdigit():
+        print("Ошибка: возраст не может быть отрицательным!")
+    elif '.' in number:
+        parts = number.split('.')
+        if len(parts) == 2 and parts[0].lstrip('-').isdigit() and parts[1].isdigit():
+            print("Ошибка: введено не целое число!")
+        else:
+            print("Ошибка: введено не число!")
+    else:
+        print("Ошибка: введено не число!")
