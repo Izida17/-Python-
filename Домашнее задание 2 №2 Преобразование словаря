@@ -1,0 +1,7 @@
+dct = {1: 11, 2: 22, 3: 33, 4: 4, 5: 33, 6: 1}
+k_set = set(dct.keys())
+v_set = set(dct.values())
+ssset = k_set.union(v_set)
+print(f"Множество ключей: {k_set}")
+print(f"Множество значений: {v_set}")
+print(f"Объединение множеств: {ssset}")
