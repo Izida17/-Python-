@@ -1,0 +1,11 @@
+t = input("Введите строку: ")
+words = t.lower().split()
+word_counts = {}
+for i in words:
+    if i in word_counts:
+        word_counts[i] += 1
+    else:
+        word_counts[i] = 1
+for i, count in word_counts.items():
+    print(f"{i}: {count}")
+    
