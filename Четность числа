@@ -1,16 +1,12 @@
 num_str = input("Введите число: ")
-if num_str.replace('.', '', 1).isdigit():
-    num = float(num_str)
-    if num > 0 and num == int(num):
-        num = int(num)
-        if num % 2 == 0:
-            print(f"Число {num} является четным")
-        else:
-            print(f"Число {num} не является четным")
+if num_str.isdigit():
+  num = int(num_str)
+  if num > 0:
+    if num % 2 == 0:
+      print(f"Число {num} является четным")
     else:
-        if num <= 0:
-            print("Ошибка: введено не положительное число")
-        else:
-            print("Ошибка: введено не целое число")
+      print(f"Число {num} не является четным")
+  else:
+    print("Ошибка: введено не положительное число")
 else:
-    print("Ошибка: введено не число")
+  print("Ошибка: введено не число")
