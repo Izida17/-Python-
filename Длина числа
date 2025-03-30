@@ -1,0 +1,13 @@
+while True:
+    number = input("Введите число: → ")
+
+    if number == "exit":
+        print("Выход из программы...")
+        break
+
+    # Проверка на число с учетом отрицательных чисел
+    if number.lstrip('-').isdigit():
+        number = number.lstrip('-') # Убираем минус для подсчета цифр
+        print("В этом числе", len(number), "цифры.")
+    else:
+        print("Ошибка: данные не являются числом.")
