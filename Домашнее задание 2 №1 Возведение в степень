@@ -1,6 +1,5 @@
 numbers = input("Введите числа через пробел: ").split()
 step = int(input("Введите степень: "))
-
 result = []
 for i in numbers:
     if i.replace("-", "").replace(".", "", 1).isdigit():
@@ -8,5 +7,4 @@ for i in numbers:
         result.append(num ** step)
     else:
         result.append(i * step)
-
 print("Вывод:", ' '.join(map(str, result)))
