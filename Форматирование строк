@@ -2,7 +2,7 @@ name = input("Ваше имя: ")
 sn = input("Фамилия: ")
 old = input("Возраст: ")
 sposob_format = "Ваше имя: {}, Фамилия: {}, Возраст: {} лет".format(name, sn, old)
-print("Реализация через format:")
+print("\nРеализация через format:")
 print(sposob_format)
 sposob_fstring = f"Ваше имя: {name}, Фамилия: {sn}, Возраст: {old} лет"
 print("\nРеализация через f-string:")
