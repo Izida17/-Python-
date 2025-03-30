@@ -8,5 +8,11 @@ if number.isdigit():
 else:
     if number.startswith('-') and number[1:].isdigit():
         print("Ошибка: введено отрицательное число")
+    elif '.' in number:
+        parts = number.split('.')
+        if len(parts) == 2 and parts[0].lstrip('-').isdigit() and parts[1].isdigit():
+            print("Ошибка: введено не целое число")
+        else:
+            print("Ошибка: введено не число")
     else:
         print("Ошибка: введено не число")
